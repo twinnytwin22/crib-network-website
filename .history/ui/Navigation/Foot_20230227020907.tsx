@@ -1,0 +1,14 @@
+import Link from 'next/link'
+import React from 'react'
+import { CardSocialIcons } from 'ui/social-icons'
+function Foot() {
+  return (
+    <div className='max-w-md md:max-w-3xl lg:max-w-5xl xl:max-w-7xl flex justify-between mx-auto pb-16'>
+  <div className='font-bold text-white hover:font-extrabold'><Link href=''>DOCS</Link></div>
+  <CardSocialIcons/>
+  <div className='font-bold text-white hover:font-extrabold'><Link href='/contact'>CONTACT</Link></div>
+    </div>
+  )
+}
+
+export default Foot
