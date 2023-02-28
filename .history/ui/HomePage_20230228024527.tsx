@@ -22,7 +22,7 @@ const HomePage = ({ rotation = 0, timing = 150 }) => {
 
   return (
   <>
-    <div className="flex mx-auto max-w-screen-sm h-full text-center p-12 md:p-24 items-center content-center"
+    <div className="flex mx-auto max-w-screen-sm h-full text-center md:p-24 items-center content-center relative"
         onMouseLeave={handleMouseLeave}
         onMouseEnter={handleMouseEnter}  >
       <div className='w-full '>

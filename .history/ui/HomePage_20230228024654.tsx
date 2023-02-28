@@ -25,8 +25,8 @@ const HomePage = ({ rotation = 0, timing = 150 }) => {
     <div className="flex mx-auto max-w-screen-sm h-full text-center p-12 md:p-24 items-center content-center"
         onMouseLeave={handleMouseLeave}
         onMouseEnter={handleMouseEnter}  >
-      <div className='w-full '>
-        <img className='h-full w-full' src="/w_crib-network.svg"/>
+      <div className='max-w-full '>
+        <img className='h-full max-w-full' src="/w_crib-network.svg"/>
         {isHovering && 
         <>
           <h3 className='mt-20 text-white uppercase font-bold'>Brands</h3>
