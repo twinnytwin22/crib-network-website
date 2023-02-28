@@ -38,7 +38,7 @@ const ContactForm = (props: any) => {
     
     <section className="">
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white uppercase">Contact Us</h2>
+      <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact Us</h2>
       <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl">Need details about our pitch deck? Looking to collaborate? Anything. Let us know.</p>
       <form onSubmit={handleSubmit} className="w-full">
       <div>
@@ -73,7 +73,7 @@ const ContactForm = (props: any) => {
         />
       </div>
       <br />
-      <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-black sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+      <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-zinc-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
       {status === 'success' && <p>Email sent!</p>}
       {status === 'error' && <p>Error sending email, please try again.</p>}
       </form>
