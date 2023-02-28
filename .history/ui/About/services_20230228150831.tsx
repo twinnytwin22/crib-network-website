@@ -1,7 +1,7 @@
 function getServices(){
 const res = [
     {
-      title: 'Media Publishing',
+      title: 'MediaPublishing',
       description: 'Get your music published and distributed to major streaming platforms worldwide.',
       brand: ''
     },
