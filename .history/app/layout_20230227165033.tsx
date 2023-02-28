@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html>
       <body className=''>
-        <div className='grid grid-cols-1 h-screen bg-stone-500 dark:bg-gray-900 content-center mx-auto'>
+        <div className='grid grid-cols-1 h-screen bg-stone dark:bg-gray-900 content-center mx-auto'>
         <div className='mt-20'>
         <Nav/></div>
 
