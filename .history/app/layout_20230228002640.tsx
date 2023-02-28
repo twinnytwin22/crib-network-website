@@ -1,3 +1,4 @@
+import 'styles/style.css'
 import Nav from 'ui/Navigation/Nav'
 import Foot from 'ui/Navigation/Foot'
 import { ToastContainer } from 'react-toastify'
@@ -23,6 +24,7 @@ export default function RootLayout({
         {children}
         <div className=''>
         <Foot/>
+        <ToastContainer/> 
         </div>
         </div></Providers>
         </body>

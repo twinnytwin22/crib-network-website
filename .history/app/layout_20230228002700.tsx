@@ -23,6 +23,7 @@ export default function RootLayout({
         {children}
         <div className=''>
         <Foot/>
+        <ToastContainer/> 
         </div>
         </div></Providers>
         </body>
