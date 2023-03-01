@@ -3,7 +3,7 @@ import React from "react";
 function AboutCopy() {
   return (
     <div>
-        <p className="text-gray-300 text-lg leading-normal">
+        <p className="text-gray-100 text-lg leading-normal">
       Welcome to our parent company, where our focus is on supporting
       music-based and music technology-based brands. Our commitment is to bring
       cutting-edge products and services to the market that enable and enhance
