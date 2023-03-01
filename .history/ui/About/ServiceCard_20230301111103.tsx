@@ -10,7 +10,7 @@ const ServiceCard = (props: any) => {
       </thead>
       <tbody>
         <tr className="text-gray-300 p-3 leading-snug">
-          <td className="p-4 text-sm md:text-md">{props.description}</td>
+          <td className="p-4">{props.description}</td>
           <td>{props.brand}</td>
         </tr>
       
