@@ -6,10 +6,10 @@ import BrandLogos from "ui/brand-icons";
 function About() {
   return (
     <div className="h-[78vh] mx-auto px-8">
-      <div className="flex h-full items-center content-center overflow-y-auto overflow-x-clip z-30 mx-auto wi">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-md md:max-w-7xl md:p-4  items-center">
+      <div className="flex h-full items-center content-center overflow-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-md md:max-w-7xl md:p-0 items-center">
           <div>
-            <h1 className="text-xl font-extrabold uppercase mt-96 md:mt-0 ">
+            <h1 className="text-xl font-extrabold uppercase mt-80 md:mt-0 ">
               What we actually do.
             </h1>
             <div>
