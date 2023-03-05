@@ -41,7 +41,7 @@ const HomePage = ({ rotation = 0, timing = 150 }) => {
         >
           <div></div>
           <div className="w-full ">
-            <img className="h-full w-full" src="/crib_w_.svg" />
+            <img className="h-full w-full" src="/crib_W_.svg" />
             {isHovering && (
               <>
                 <h3 className="mt-20 text-white uppercase font-bold">Our Network</h3>
