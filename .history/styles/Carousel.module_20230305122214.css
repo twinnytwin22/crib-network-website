@@ -1,0 +1,35 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .items {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 16px;
+    padding: 16px 0;
+  }
+  
+  .item {
+    scroll-snap-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 8px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+  }
+  
+  
+  .active {
+    background-color: #f00;
+    color: #fff;
+  }
+  
