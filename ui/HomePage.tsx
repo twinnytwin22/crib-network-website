@@ -26,7 +26,7 @@ const HomePage = ({ rotation = 0, timing = 150 }) => {
         >
           <div></div>
           <div className="w-full ">
-            <img className="h-full w-full" src="/w_crib-network.svg" />   
+            <img className="h-full w-full" src="/crib_W_.svg" />   
               <>
                 <h3 className="mt-20 text-white uppercase font-bold">Brands</h3>
                 <BrandLogos />
