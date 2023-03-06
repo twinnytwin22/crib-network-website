@@ -16,7 +16,7 @@ const ProductCarousel = () => {
   };
 
   return (
-    <div className="max-w-screen w-full p-20 mx-auto">
+    <div className="max-w-screen w-full p-10 md:p-20 mx-auto">
     <Slider {...settings}>
       {items.map((item, i) => (
         <div className="h-screen mx-auto" key={i}>

@@ -42,7 +42,7 @@ function ProductItem({ item }: any) {
           </div>
           <div className="flex lg:col-span-6 mx-auto static items-end md:pr-16">
             <img
-              className="flex w-36 sm:w-40 lg:w-60 xl:w-96 -mr-8 shadow-lg shadow-black rounded-3xl hover:-translate-y-6 ease-in-out duration-500"
+              className="flex w-56 lg:w-60 xl:w-96 -mr-8 shadow-lg shadow-black rounded-3xl hover:-translate-y-6 ease-in-out duration-500"
               src={item.imageUrl1}
               alt="mockup"
             />
