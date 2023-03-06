@@ -1,16 +1,18 @@
 export interface Item {
     title: string;
-    imageUrl: string;
+    imageUrl1: string;
+    imageUrl2: string;
   }
   
   export const items: Item[] = [
     {
       title: "NFT Creator Portfolio ",
-      imageUrl: "/blackprint.png",
+      imageUrl1: "/manager-screen-desktop.png",
+      imageUrl2: '/manager-screen-mobile.png'
     },
     {
       title: "Subport",
-      imageUrl: "https://via.placeholder.com/200x200.png?text=Item+2",
+      imageUrl1: "/subport-desktop.png",
+      imageUrl2: "/subport-mobile.png", 
     },
-
   ];

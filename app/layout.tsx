@@ -18,7 +18,7 @@ export default function RootLayout({
     <html>
       <body className="">
         <Providers>
-          <div className="grid grid-cols-1 h-screen bg-stone-500 dark:bg-gray-900 content-center mx-auto overflow-hidden">
+          <div className="grid grid-cols-1 h-screen bg-slate-900 content-center mx-auto overflow-hidden">
             <div className="mt-20">
               <Nav />
           
