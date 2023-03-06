@@ -10,15 +10,14 @@ function ProductItem({ item }: any) {
               {item.title}
             </h1>
             <p className="max-w-2xl mb-6 font-light text-slate-300 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              From checkout to global sales tax compliance, companies around the
-              world use Flowbite to simplify their payment stack.
+            {item.description}
             </p>
             <div className="flex">
               <a
-                href="#"
+                href={item.url}
                 className="inline-flex items-center justify-center px-5 py-3 mr-3 text-xs md:text-base  font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
               >
-                Go to Website
+                {item.buttonText}
                 <svg
                   className="w-5 h-5 ml-2 -mr-1"
                   fill="currentColor"
@@ -34,7 +33,7 @@ function ProductItem({ item }: any) {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 text-xs md:text-base font-medium text-center  border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                className="disabled inline-flex items-center justify-center px-5 py-3 text-xs md:text-base font-medium text-center  border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 View Docs
               </a>{" "}
