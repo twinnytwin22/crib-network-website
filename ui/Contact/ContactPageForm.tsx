@@ -9,6 +9,7 @@ const ContactForm = (props: any) => {
     email: '',
     subject: '',
     message: '',
+    name: '',
   })
   const [status, setStatus] = useState('')
 
@@ -26,7 +27,7 @@ const ContactForm = (props: any) => {
       setStatus('success') 
       if (res) {
       toast("Your message was sent successfully")}
-      setFormData({ email: '', subject: '', message: '' })
+      setFormData({ email: '', subject: '', message: '' , name: ''})
     } catch (err) {
       setStatus('error')
       toast('Error sending email. Please try again later.')
@@ -51,6 +52,17 @@ const ContactForm = (props: any) => {
           required
         />
         </div>
+        <br />
+      <div>
+              <label htmlFor="subject" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your Name</label>
+              <input className='shadow-sm bg-gray-50 border mb-4 border-gray-300 text-black text-sm rounded-md focus:ring-red-300 focus:border-red-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-red-500 dark:focus:border-red-500 dark:shadow-sm-light required'
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+    </div>
       <br />
       <div>
               <label htmlFor="subject" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Subject</label>

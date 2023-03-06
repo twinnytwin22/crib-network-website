@@ -1,27 +1,33 @@
+import sgMail from '@sendgrid/mail';
 
-require("dotenv").config();
-const sgMail = require("@sendgrid/mail");
-const { SENDGRID_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
-sgMail.setApiKey(SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
 export default async function (req: any, res: any) {
   const { subject, email, message } = req.body;
+  if (!email) {
+    res.status(400).json({ error: 'Email is required' });
+    return;
+  }
+
   const msg = {
-    to: TO_EMAIL, // Change to your recipient
-    from: FROM_EMAIL, // Change to your verified sender
-    subject: "The CRIB Contact Form",
-    text: "New Message from the CRIB",
-    html: `<strong>${subject}</strong>,
+    to: email,
+    cc: process.env.NEXT_PUBLIC_FROM_EMAIL as string,
+    from: process.env.NEXT_PUBLIC_FROM_EMAIL as string,
+    subject: 'The CRIB Contact Form',
+    text: 'New Message from the TheCrib.Network',
+    html: `
+      <strong>${subject}</strong>
       <strong>${email}</strong>
-      <strong>${message}</strong>,`,
+      <strong>${message}</strong>
+    `,
   };
-  await sgMail
-    .send(msg)
-    .then(() => {
-      console.log("Email sent");
-      res.json({ success: true });
-    })
-    .catch((error: any) => {
-      console.error(error);
-    });
+
+  try {
+    await sgMail.send(msg);
+    console.log('Email sent');
+    res.json({ success: true });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Error sending email' });
+  }
 }
