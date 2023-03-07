@@ -18,7 +18,7 @@ export interface Item {
       url: "http://thecrib.space",
       gitUrl: '',
       buttonText: 'View Example',
-      description: 'Web3 Creator Manager serves as a portfolio, commerce, and engagement manager for creators, providing discoverability to previous content that would often get lost with new releases.'
+      description: 'Portfolio, commerce, and engagement manager for creators, providing discoverability to previous that would often get lost with new releases.'
     },
     {
       title: "Subport",

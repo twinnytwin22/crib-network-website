@@ -34,7 +34,7 @@ function ProductItem({ item }: any) {
               </a>
               <a
                 href="#"
-                className="disabled inline-flex items-center justify-center px-5 py-3 text-xs md:text-base font-medium text-center  border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                className="hidden items-center justify-center px-5 py-3 text-xs md:text-base font-medium text-center  border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 View Docs
               </a>{" "}
