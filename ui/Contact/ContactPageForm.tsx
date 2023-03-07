@@ -37,10 +37,10 @@ const ContactForm = (props: any) => {
 
   return (
     
-    <div className="">
+
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact Us</h2>
-      <p className="mb-4 lg:mb-16 font-light text-center text-white dark:text-gray-400 sm:text-xl">Need details about our pitch deck? Looking to collaborate? Anything. Let us know.</p>
+      <p className="mb-4 font-light text-center text-white dark:text-gray-400 sm:text-xl">Need details about our pitch deck? Looking to collaborate? Anything. Let us know.</p>
       <form onSubmit={handleSubmit} className="w-full">
       <div>
         <label htmlFor="email" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your email</label>
@@ -53,7 +53,8 @@ const ContactForm = (props: any) => {
         />
         </div>
         <br />
-      <div className='hidden md:block'>
+        <div className='flex space-x-3 mx-auto'>
+      <div className='w-full'>
               <label htmlFor="name" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your Name</label>
               <input className='shadow-sm bg-gray-50 border border-gray-300 text-black text-sm rounded-md focus:ring-red-300 focus:border-red-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-red-500 dark:focus:border-red-500 dark:shadow-sm-light required'
           type="text"
@@ -64,7 +65,7 @@ const ContactForm = (props: any) => {
         />
     </div>
       <br className='hidden md:block'/>
-      <div>
+      <div className='w-full'>
               <label htmlFor="subject" className="block mb-2 text-sm font-medium text-white dark:text-gray-300">Subject</label>
               <input className='shadow-sm bg-gray-50 border  border-gray-300 text-black text-sm rounded-md focus:ring-red-300 focus:border-red-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-red-500 dark:focus:border-red-500 dark:shadow-sm-light required'
           type="text"
@@ -73,7 +74,7 @@ const ContactForm = (props: any) => {
           onChange={handleChange}
           required
         />
-    </div>
+    </div></div>
       <br />
       <div className="sm:col-span-2">
               <label htmlFor="message" className="block mb-2 text-sm font-medium text-white dark:text-gray-400">Your message</label>
@@ -90,7 +91,6 @@ const ContactForm = (props: any) => {
       {status === 'error' && <p>Error sending email, please try again.</p>}
       </form>
   </div>  
-</div>
   )
 }
 
