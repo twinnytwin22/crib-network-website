@@ -40,14 +40,14 @@ function ProductItem({ item }: any) {
               </a>{" "}
             </div>
           </div>
-          <div className="flex lg:col-span-6 mx-auto static items-end md:pr-16">
+          <div className="flex m-4 md:m-0 lg:col-span-6 mx-auto static px-8 items-end md:pr-16">
             <img
-              className="flex w-56 lg:w-60 xl:w-96 -mr-8 shadow-lg shadow-black rounded-3xl hover:-translate-y-6 ease-in-out duration-500"
+              className="flex w-56 lg:w-60 xl:w-96 -mr-8 shadow-lg shadow-black rounded-3xl md:hover:-translate-y-6 ease-in-out duration-500"
               src={item.imageUrl1}
               alt="mockup"
             />
             <img
-              className="flex w-36 sm:w-40  xl:w-56 -ml-12 shadow-lg shadow-black rounded-3xl relative hover:-translate-y-6 duration-500"
+              className="flex w-36 sm:w-40  xl:w-56 -ml-12 shadow-lg shadow-black rounded-3xl relative md:hover:-translate-y-6 duration-500"
               src={item.imageUrl2}
               alt="mockup"
             />
